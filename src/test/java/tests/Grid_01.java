@@ -15,8 +15,6 @@ public class Grid_01 {
 
    static WebDriver driver;
 
-   DriverManage driverManage = new DriverManage();
-
 
     public static void main(String[] args) throws MalformedURLException {
 
@@ -43,27 +41,9 @@ public class Grid_01 {
 
 }
 
-    @Test
-    public void chromeTest() {
 
-        driver = driverManage.setUpChromeDriver();
 
-        driver.get("https://www.amazon.com");
-        System.out.println(driver.getTitle());
-        System.out.println(driver.getCurrentUrl());
 
-    }
-
-    @Test
-    public void firefoxRemoteTest() throws MalformedURLException {
-
-        driver = driverManage.setUpFirefoxDriver();
-
-        driver.get("https://www.amazon.com");
-        System.out.println(driver.getTitle());
-        System.out.println(driver.getCurrentUrl());
-
-    }
 
 
 }

@@ -8,7 +8,7 @@ public class Grid_03 {
 
     @BeforeTest
     @Parameters ("browser")
-    void beforeTest(@Optional ("grid_chrome") String browser){
+    void beforeTest(@Optional ("grid_edge") String browser){
         setDriver(browser);
     }
 
